@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="src/output.css">
 </head>
 
-<body class=" bg-pink-700">
+<body class="bg-black">
 
 
   <div class="container mx-auto flex min-h-screen">
@@ -86,7 +86,7 @@
 
 
     </div>
-    <div class="rightbar w-[30%] bg-black">
+    <div class="rightbar w-[40%] bg-black p-[10px]">
 
       <div class="searchbar bg-black rounded-3xl h-[2.5rem] w-[300px] ml-1 border border-white text-white">
         <input type="text" placeholder="Search" class="p-2">
@@ -131,7 +131,7 @@
         </div>
 
 
-        <div class="dropdown">
+        <div class="dropdown1">
           <h3 class="text-blue-400 cursor-pointer mt-[10px] float">Show more</h3>
         </div>
 
@@ -141,26 +141,75 @@
       <div class="follow rounded-3xl border  mt-[20px] border-white p-[10px]">
         <h1 class=" text-white text-2xl font-bold">Who to follow</h1>
 
-        <div class="follow1 flex">
-          <span class="flex"><img alt="" draggable="true" src="https://pbs.twimg.com/profile_images/1572937957895507968/Z_NW0tQi_normal.jpg" class="css-9pa8cd rounded-3xl"></span>
-          <span class="text-white no-underline hover:underline"><a href="" >Minimalist Baker</a></span><br>
-          <span class="text-gray-400">@minimalistbaker</span>
-          <button class="bg-white text-black font-bold rounded-2xl h-[40px] w-[8rem] mt-[-60px] float-right">Follow</button>
+        <div class="follow1 flex items-center justify-between bg-black p-4 rounded-lg w-full max-w-[600px] mt-[20px]">
+          <!-- Left: Image -->
+          <div>
+            <img alt="" draggable="true" src="https://pbs.twimg.com/profile_images/1572937957895507968/Z_NW0tQi_normal.jpg" class="w-12 h-12 rounded-3xl">
+          </div>
+        
+          <!-- Middle: Texts -->
+          <div class="flex flex-col justify-center mx-4 flex-grow">
+            <a href="#" class="text-white font-semibold no-underline hover:underline">Minimalist Baker</a>
+            <span class="text-gray-400">@minimalistbaker</span>
+          </div>
+        
+          <!-- Right: Button -->
+          <div>
+            <button class="bg-white text-black font-bold h-[30px] w-[80px] rounded-3xl">Follow</button>
+          </div>
         </div>
 
-        <div class="follow1 flex">
-          <img alt="Square profile picture" draggable="true" src="https://pbs.twimg.com/profile_images/1669780523911110656/K9gaaM1g_normal.jpg" class="css-9pa8cd rounded-3xl">
-          <a href="" class="text-white no-underline hover:underline">CNN</a>
-          <span class="text-gray-400">@CNN</span>
-          <button class="bg-white text-black font-bold rounded-2xl h-[40px] w-[8rem] mt-[20px]">Follow</button>
+        <div class="follow2 flex items-center justify-between bg-black p-4 rounded-lg w-full max-w-[600px] mt-[10px]">
+          <!-- Left: Image -->
+          <div>
+            <img alt="Square profile picture" draggable="true" src="https://pbs.twimg.com/profile_images/1669780523911110656/K9gaaM1g_normal.jpg" class="w-12 h-12 rounded-3xl">
+          </div>
+        
+          <!-- Middle: Texts -->
+          <div class="flex flex-col justify-center mx-4 flex-grow">
+            <a href="#" class="text-white font-semibold no-underline hover:underline">CNN</a>
+            <span class="text-gray-400">@CNN</span>
+          </div>
+        
+          <!-- Right: Button -->
+          <div>
+            <button class="bg-white text-black font-bold h-[30px] w-[80px] rounded-3xl">Follow</button>
+          </div>
+        </div>
+        
+
+        <div class="follow3 flex items-center justify-between bg-black p-4 rounded-lg w-full max-w-[600px] mt-[10px]">
+          <!-- Left: Image -->
+          <div>
+            <img alt="" draggable="true" src="https://pbs.twimg.com/profile_images/1732468757493121025/r1P4zChc_normal.jpg" class="w-12 h-12 rounded-3xl">
+          </div>
+        
+          <!-- Middle: Texts -->
+          <div class="flex flex-col justify-center mx-4 flex-grow">
+            <a href="#" class="text-white font-semibold no-underline hover:underline">ADAM</a>
+            <span class="text-gray-400">@AdamMedia</span>
+          </div>
+        
+          <!-- Right: Button -->
+          <div>
+            <button class="bg-white text-black font-bold h-[30px] w-[80px] rounded-3xl">Follow</button>
+          </div>
         </div>
 
-        <div class="follow1 flex">
-          <img alt="" draggable="true" src="https://pbs.twimg.com/profile_images/1732468757493121025/r1P4zChc_normal.jpg" class="css-9pa8cd rounded-3xl">
-          <a href="" class="text-white no-underline hover:underline">ADAM</a>
-          <span class="text-gray-400">@AdamMedia</span>
-          <button class="bg-white text-black font-bold rounded-2xl h-[40px] w-[8rem] mt-[20px]">Follow</button>
+        <div class="dropdown2">
+          <h3 class="text-blue-400 cursor-pointer mt-[10px] float">Show more</h3>
         </div>
+        
+      </div>
+
+      <div class="footerlinks flex gap-x-4 text-gray-400 flex-wrap p-[10px]">
+        <a href="" class="gap-0.5">Terms of Service</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Cookie Policy</a>
+        <a href="">Accessibility</a>
+        <a href="">Ads info</a>
+        <a href="">More ...</a>
+        <a href="">@ 2025 X Corp.</a>
       </div>
 
     </div>
