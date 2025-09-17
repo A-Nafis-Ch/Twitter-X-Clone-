@@ -5,419 +5,254 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Home / X</title>
-  <!-- <link rel="stylesheet" href="src/input.css"> -->
-  <link rel="stylesheet" href="src/output.css">
+  <!-- <link rel="stylesheet" href="src/output.css"> -->
+   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
 <body class="bg-black">
 
-
   <div class="container mx-auto flex min-h-screen">
 
-    <div class="leftbar bg-black w-[30%]">
-
-      <div class="logo flex justify-center mr-[215px] mt-[15px]">
-        <img src="./Icons/logo.svg" alt="" class="h-[30px] invert">
-
+    <!-- LEFT SIDEBAR -->
+    <div class="hidden md:flex flex-col items-start bg-black w-20 lg:w-1/4 xl:w-1/5 p-2">
+      <!-- Logo -->
+      <div class="flex justify-center lg:justify-start mb-4">
+        <img src="./Icons/logo.svg" alt="logo" class="h-8 invert">
       </div>
 
-      <div class="navbar flex justify-center ">
-
-        <ul class="text-white cursor-pointer p-3 font-bold text-2xl font-sans mt-[10px]">
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/home.svg" alt="" class="invert h-[30px]">
-            <span>Home</span>
-          </li>
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/search.svg" alt="" class="invert h-[30px]">
-            <span>Explore</span>
-          </li>
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/notif.svg" alt="" class="invert h-[30px]">
-            <span>Notifications</span>
-          </li>
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/message.svg" alt="" class="invert h-[30px]">
-            <span>Messages</span>
-          </li>
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/grok.svg" alt="" class="invert h-[30px]">
-            <span>Grok</span>
-          </li>
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/bookmark.svg" alt="" class="invert h-[30px]">
-            <span>Bookmarks</span>
-          </li>
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/job.svg" alt="" class="invert h-[30px]">
-            <span>Jobs</span>
-          </li>
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/community.svg" alt="" class="invert h-[30px]">
-            <span>Communities</span>
-          </li>
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/premium.svg" alt="" class="invert h-[30px]">
-            <span>Premium</span>
-          </li>
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/verif.svg" alt="" class="invert h-[30px]">
-            <span>Verfied Orgs</span>
-          </li>
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/prof.svg" alt="" class="invert h-[30px]">
-            <span>Profile</span>
-          </li>
-          <li class="flex items-center space-x-2 p-3 hover:rounded-2xl hover:bg-gray-800 mt-[10px]">
-            <img src="./Icons/more.svg" alt="" class="invert h-[30px]">
-            <span>More</span>
-          </li>
-
-          <button
-            class="flex items-center justify-center space-x-2 p-3 mt-[35px] bg-white rounded-4xl w-[17rem] text-black text-center cursor-pointer">Post</button>
-
-        </ul>
-      </div>
-
-    </div>
-    <div class="newsfeed w-[90%] bg-black border-l border-r border-solid border-white">
-
-      <div class="top flex  h-[50px] text-center justify-center text-white">
-        <div class="foryou bg-black w-1/2 text-2xl font-bold mt-[5px]">For you</div>
-        <div class="following bg-black w-1/2 text-2xl font-bold mt-[5px]">Following</div>
-      </div>
-      <div class="blueselectedbar bg-blue-400 w-[70px] h-[8px] ml-[180px] rounded"></div>
-    
-      <div class="horizontalborder bg-white w-[100%] h-[1px]"></div>
-
-      <div class="whatshappening flex">
-        <div class="userpic ml-[20px] mt-[20px]">
-          <img alt="" draggable="true" src="./userpic/userpic.JPEG" class="w-12 h-12 rounded-3xl absolute">
-        </div>
-        <div class="timelineinput text-gray-400 text-3xl ml-[60px] mt-[20px]h-[100px] w-[85%]">
-          <input type="text" placeholder="What's happening?">
-        </div>
-
-        
-
-      </div>
-      <div class="horizontalborder bg-white w-[80%] h-[1px] ml-[80px] mt-[60px]"></div>
-
-      <div class="timelineicons flex gap-4 ml-[90px] mt-[20px]">
-        <div class="media invert h-[30px] w-[30px]">
-          <img src="./timeline icons/media.svg" alt="">
-        </div>
-
-        <div class="gif invert h-[30px] w-[30px]">
-          <img src="./timeline icons/gif.svg" alt="">
-        </div>
-
-        <div class="grok invert h-[30px] w-[30px]">
-          <img src="./timeline icons/grok.svg" alt="">
-        </div>
-
-        <div class="poll invert h-[30px] w-[30px]">
-          <img src="./timeline icons/poll.svg" alt="">
-        </div>
-
-        <div class="emoji invert h-[30px] w-[30px]">
-          <img src="./timeline icons/emoji.svg" alt="">
-        </div>
-
-        <div class="schedule invert h-[30px] w-[30px]">
-          <img src="./timeline icons/schedule.svg" alt="">
-        </div>
-
-        <div class="map invert h-[30px] w-[30px]">
-          <img src="./timeline icons/map.svg" alt="">
-        </div>
-
-        <div>
-          <button class="bg-white text-black font-bold h-[50px] w-[90px] rounded-3xl ml-[320px]">Post</button>
-        </div>
-
-      </div>
-
-      <div class="horizontalborder bg-white w-[100%] h-[1px] mt-[30px]"></div>
-
-      <div class="posts">
-        <div class="post">
-          <div class="channelpic ml-[20px] mt-[10px]">
-
-            <img alt="" draggable="true" src="./postpics/channelpic.jpg" class="w-12 h-12 rounded-3xl absolute">
-            
-            <span class="channelName font-bold text-white ml-[60px]">China Says</span>
-            <span class="channelName font-bold text-gray-500 ml-[10px]">@China_says</span>
-
-            <img src="./Icons/showmore.svg" alt="" class="h-[20px] w-[50px] invert float-right mt-[10x] cursor-pointer">
-
-            <p class="channelPost text-white mt-[30px] ml-[60px] mr-[30px]">TikTok has overtaken Facebook in South Korea, drawing more monthly active users, highlighting the short-video app's rising popularity in Asia.</p>
-
-            <div class="postpic ml-[60px] mt-[10px]">
-              <img class="rounded-2xl h-[40%] border border-white" src="./postpics/post1.jpeg" alt="">
-            </div>
-
-            <div class="postfrom flex gap-2.5 mt-[4px] ml-[60px] ">
-              <span class="text-gray-500">From</span>
-              <span class="text-white font-bold">Tiktok</span>
-            </div>
-
-            <div class="posticons flex mt-[10px] gap-[80px] ml-[60px]">
-              <div class="comment invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/comment.svg" alt="">
-
-              </div>
-
-              <div class="repost invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/repost.svg" alt="">
-
-              </div>
-
-              <div class="like invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/like.svg" alt="">
-
-              </div>
-
-              <div class="view invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/view.svg" alt="">
-
-              </div>
-
-              <div class="bookmark invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/bookmark.svg" alt="">
-
-              </div>
-
-              <div class="save invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/save.svg" alt="">
-
-              </div>
-
-            </div>
-
-
-
-
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="horizontalborder bg-white w-[100%] h-[1px] mt-[30px]"></div>
-
-      <div class="posts">
-        <div class="post">
-          <div class="channelpic ml-[20px] mt-[10px]">
-
-            <img alt="" draggable="true" src="./postpics/channelpic.jpg" class="w-12 h-12 rounded-3xl absolute">
-            
-            <span class="channelName font-bold text-white ml-[60px]">China Says</span>
-            <span class="channelName font-bold text-gray-500 ml-[10px]">@China_says</span>
-
-            <img src="./Icons/showmore.svg" alt="" class="h-[20px] w-[50px] invert float-right mt-[10x] cursor-pointer">
-
-            <p class="channelPost text-white mt-[30px] ml-[60px] mr-[30px]">TikTok has overtaken Facebook in South Korea, drawing more monthly active users, highlighting the short-video app's rising popularity in Asia.</p>
-
-            <div class="postpic ml-[60px] mt-[10px]">
-              <img class="rounded-2xl h-[40%] border border-white" src="./postpics/post1.jpeg" alt="">
-            </div>
-
-            <div class="postfrom flex gap-2.5 mt-[4px] ml-[60px] ">
-              <span class="text-gray-500">From</span>
-              <span class="text-white font-bold">Tiktok</span>
-            </div>
-
-            <div class="posticons flex mt-[10px] gap-[80px] ml-[60px]">
-              <div class="comment invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/comment.svg" alt="">
-
-              </div>
-
-              <div class="repost invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/repost.svg" alt="">
-
-              </div>
-
-              <div class="like invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/like.svg" alt="">
-
-              </div>
-
-              <div class="view invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/view.svg" alt="">
-
-              </div>
-
-              <div class="bookmark invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/bookmark.svg" alt="">
-
-              </div>
-
-              <div class="save invert w-[25px] cursor-pointer">
-
-                <img src="./post icons/save.svg" alt="">
-
-              </div>
-
-            </div>
-
-
-
-
-          </div>
-        </div>
-      </div>
-
-      
-      <div class="horizontalborder bg-white w-[100%] h-[1px] mt-[30px]"></div>
-
-
-    </div>
-    <div class="rightbar w-[40%] bg-black p-[10px]">
-
-      <div class="searchbar bg-black rounded-3xl h-[2.5rem] w-[300px] ml-1 border border-white text-white">
-        <input type="text" placeholder="Search" class="p-2">
-      </div>
-
-      <div class="subscription rounded-3xl border  mt-[20px] border-white p-[10px]">
-
-        <h1 class=" text-white text-2xl font-bold">Subscribe to Premium</h1>
-        <h3 class=" text-white text-1xl mt-[20px]">Subscribe to unlock new features and if eligible, receive a share of
-          revenue.</h3>
-
-        <button class="bg-blue-400 text-white font-bold rounded-2xl h-[40px] w-[8rem] mt-[20px]">Subscribe</button>
-
-      </div>
-
-      <div class="latestNews rounded-3xl border  mt-[20px] border-white p-[10px]">
-
-        <h1 class=" text-white text-2xl font-bold">What's happening</h1>
-        <div class="news1 mt-[8px]">
-          <span class="text-gray-400">Sports Trending</span><br>
-          <span class="text-1xl font-bold  text-white">Manchester City</span><br>
-          <span class="text-gray-400">12k posts</span>
-          <img src="./Icons/showmore.svg" alt="" class="h-[20px] w-[50px] invert float-right mt-[-15px] cursor-pointer">
-        </div>
-        <div class="news2 mt-[8px]">
-          <span class="text-gray-400">Trending in Bangladesh</span><br>
-          <span class="text-1xl font-bold  text-white">Harshad Chopda</span><br>
-          <span class="text-gray-400">12k posts</span>
-          <img src="./Icons/showmore.svg" alt="" class="h-[20px] w-[50px] invert float-right mt-[-15px] cursor-pointer">
-        </div>
-        <div class="news3 mt-[8px]">
-          <span class="text-gray-400">Entertainment-Trending</span><br>
-          <span class="text-1xl font-bold  text-white">Bollyhood</span><br>
-          <span class="text-gray-400">12k posts</span>
-          <img src="./Icons/showmore.svg" alt="" class="h-[20px] w-[50px] invert float-right mt-[-15px] cursor-pointer">
-        </div>
-        <div class="news4 mt-[8px]">
-          <span class="text-gray-400">Trending</span><br>
-          <span class="text-1xl font-bold  text-white">#TrumpRecessin</span><br>
-          <span class="text-gray-400">12k posts</span>
-          <img src="./Icons/showmore.svg" alt="" class="h-[20px] w-[50px] invert float-right mt-[-15px] cursor-pointer">
-        </div>
-
-
-        <div class="dropdown1">
-          <h3 class="text-blue-400 cursor-pointer mt-[10px] float">Show more</h3>
-        </div>
-
-
-      </div>
-
-      <div class="follow rounded-3xl border  mt-[20px] border-white p-[10px]">
-        <h1 class=" text-white text-2xl font-bold">Who to follow</h1>
-
-        <div class="follow1 flex items-center justify-between bg-black p-4 rounded-lg w-full max-w-[600px] mt-[20px]">
-          <!-- Left: Image -->
-          <div>
-            <img alt="" draggable="true" src="https://pbs.twimg.com/profile_images/1572937957895507968/Z_NW0tQi_normal.jpg" class="w-12 h-12 rounded-3xl">
-          </div>
-        
-          <!-- Middle: Texts -->
-          <div class="flex flex-col justify-center mx-4 flex-grow">
-            <a href="#" class="text-white font-semibold no-underline hover:underline">Minimalist Baker</a>
-            <span class="text-gray-400">@minimalistbaker</span>
-          </div>
-        
-          <!-- Right: Button -->
-          <div>
-            <button class="bg-white text-black font-bold h-[30px] w-[80px] rounded-3xl">Follow</button>
-          </div>
-        </div>
-
-        <div class="follow2 flex items-center justify-between bg-black p-4 rounded-lg w-full max-w-[600px] mt-[10px]">
-          <!-- Left: Image -->
-          <div>
-            <img alt="Square profile picture" draggable="true" src="https://pbs.twimg.com/profile_images/1669780523911110656/K9gaaM1g_normal.jpg" class="w-12 h-12 rounded-3xl">
-          </div>
-        
-          <!-- Middle: Texts -->
-          <div class="flex flex-col justify-center mx-4 flex-grow">
-            <a href="#" class="text-white font-semibold no-underline hover:underline">CNN</a>
-            <span class="text-gray-400">@CNN</span>
-          </div>
-        
-          <!-- Right: Button -->
-          <div>
-            <button class="bg-white text-black font-bold h-[30px] w-[80px] rounded-3xl">Follow</button>
-          </div>
-        </div>
-        
-
-        <div class="follow3 flex items-center justify-between bg-black p-4 rounded-lg w-full max-w-[600px] mt-[10px]">
-          <!-- Left: Image -->
-          <div>
-            <img alt="" draggable="true" src="https://pbs.twimg.com/profile_images/1732468757493121025/r1P4zChc_normal.jpg" class="w-12 h-12 rounded-3xl">
-          </div>
-        
-          <!-- Middle: Texts -->
-          <div class="flex flex-col justify-center mx-4 flex-grow">
-            <a href="#" class="text-white font-semibold no-underline hover:underline">ADAM</a>
-            <span class="text-gray-400">@AdamMedia</span>
-          </div>
-        
-          <!-- Right: Button -->
-          <div>
-            <button class="bg-white text-black font-bold h-[30px] w-[80px] rounded-3xl">Follow</button>
-          </div>
-        </div>
-
-        <div class="dropdown2">
-          <h3 class="text-blue-400 cursor-pointer mt-[10px] float">Show more</h3>
-        </div>
-        
-      </div>
-
-      <div class="footerlinks flex gap-x-4 text-gray-400 flex-wrap p-[10px]">
-        <a href="" class="gap-0.5">Terms of Service</a>
-        <a href="">Privacy Policy</a>
-        <a href="">Cookie Policy</a>
-        <a href="">Accessibility</a>
-        <a href="">Ads info</a>
-        <a href="">More ...</a>
-        <a href="">@ 2025 X Corp.</a>
-      </div>
-
+      <!-- Nav -->
+      <ul class="text-white font-bold text-lg w-full space-y-2">
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/home.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">Home</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/search.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">Explore</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/notif.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">Notifications</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/message.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">Messages</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/grok.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">Grok</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/bookmark.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">Bookmarks</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/job.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">Jobs</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/community.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">Communities</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/premium.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">Premium</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/verif.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">Verified Orgs</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/prof.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">Profile</span>
+        </li>
+        <li class="flex items-center space-x-2 p-2 rounded-2xl hover:bg-gray-800 cursor-pointer">
+          <img src="./Icons/more.svg" alt="" class="invert h-6">
+          <span class="hidden lg:inline">More</span>
+        </li>
+      </ul>
+
+      <!-- Post button -->
+      <button class="mt-4 bg-white text-black font-bold rounded-full px-6 py-2 hidden lg:block">
+        Post
+      </button>
     </div>
 
+    <!-- FEED -->
+    <div class="flex-1 border-x border-gray-700">
+      <!-- Tabs -->
+      <div class="flex justify-around text-white font-bold text-lg">
+        <div class="py-3 cursor-pointer w-1/2 text-center hover:bg-gray-800">For you</div>
+        <div class="py-3 cursor-pointer w-1/2 text-center hover:bg-gray-800">Following</div>
+      </div>
+      <div class="h-[1px] bg-gray-700"></div>
+
+      <!-- What's happening -->
+      <div class="flex p-4 space-x-4">
+        <img src="./userpic/userpic.JPEG" class="w-12 h-12 rounded-full">
+        <input type="text" placeholder="What's happening?"
+          class="flex-1 bg-transparent text-white placeholder-gray-500 text-lg outline-none">
+      </div>
+
+      <div class="flex items-center justify-between px-16 py-2">
+        <div class="flex space-x-4">
+          <img src="./timeline icons/media.svg" class="invert h-6 w-6">
+          <img src="./timeline icons/gif.svg" class="invert h-6 w-6">
+          <img src="./timeline icons/grok.svg" class="invert h-6 w-6">
+          <img src="./timeline icons/poll.svg" class="invert h-6 w-6">
+          <img src="./timeline icons/emoji.svg" class="invert h-6 w-6">
+          <img src="./timeline icons/schedule.svg" class="invert h-6 w-6">
+          <img src="./timeline icons/map.svg" class="invert h-6 w-6">
+        </div>
+        <button class="bg-white text-black font-bold px-4 py-1 rounded-full">Post</button>
+      </div>
+      <div class="h-[1px] bg-gray-700"></div>
+
+      <!-- Posts -->
+      <div class="space-y-6">
+        <!-- Post 1 -->
+        <div class="p-4 flex space-x-3">
+          <img src="./postpics/channelpic.jpg" class="w-12 h-12 rounded-full">
+          <div class="flex-1">
+            <div class="flex items-center justify-between">
+              <div class="flex space-x-2">
+                <span class="text-white font-bold">China Says</span>
+                <span class="text-gray-500">@China_says</span>
+              </div>
+              <img src="./Icons/showmore.svg" class="h-5 invert cursor-pointer">
+            </div>
+            <p class="text-white mt-2">
+              TikTok has overtaken Facebook in South Korea, drawing more monthly active users, highlighting the short-video app's rising popularity in Asia.
+            </p>
+            <div class="mt-2">
+              <img src="./postpics/post1.jpeg" class="rounded-2xl border border-gray-700">
+            </div>
+            <div class="flex items-center space-x-6 text-gray-500 mt-3">
+              <img src="./post icons/comment.svg" class="invert h-5 cursor-pointer">
+              <img src="./post icons/repost.svg" class="invert h-5 cursor-pointer">
+              <img src="./post icons/like.svg" class="invert h-5 cursor-pointer">
+              <img src="./post icons/view.svg" class="invert h-5 cursor-pointer">
+              <img src="./post icons/bookmark.svg" class="invert h-5 cursor-pointer">
+              <img src="./post icons/save.svg" class="invert h-5 cursor-pointer">
+            </div>
+          </div>
+        </div>
+        <div class="h-[1px] bg-gray-700"></div>
+        <!-- Duplicate Post Example -->
+        <div class="p-4 flex space-x-3">
+          <img src="./postpics/channelpic.jpg" class="w-12 h-12 rounded-full">
+          <div class="flex-1">
+            <div class="flex items-center justify-between">
+              <div class="flex space-x-2">
+                <span class="text-white font-bold">China Says</span>
+                <span class="text-gray-500">@China_says</span>
+              </div>
+              <img src="./Icons/showmore.svg" class="h-5 invert cursor-pointer">
+            </div>
+            <p class="text-white mt-2">
+              TikTok has overtaken Facebook in South Korea, drawing more monthly active users, highlighting the short-video app's rising popularity in Asia.
+            </p>
+            <div class="mt-2">
+              <img src="./postpics/post1.jpeg" class="rounded-2xl border border-gray-700">
+            </div>
+            <div class="flex items-center space-x-6 text-gray-500 mt-3">
+              <img src="./post icons/comment.svg" class="invert h-5 cursor-pointer">
+              <img src="./post icons/repost.svg" class="invert h-5 cursor-pointer">
+              <img src="./post icons/like.svg" class="invert h-5 cursor-pointer">
+              <img src="./post icons/view.svg" class="invert h-5 cursor-pointer">
+              <img src="./post icons/bookmark.svg" class="invert h-5 cursor-pointer">
+              <img src="./post icons/save.svg" class="invert h-5 cursor-pointer">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- RIGHT SIDEBAR -->
+    <div class="hidden lg:block w-1/3 xl:w-1/4 p-4 space-y-4">
+      <!-- Search -->
+      <div class="rounded-full border border-gray-600 p-2">
+        <input type="text" placeholder="Search"
+          class="bg-transparent w-full text-white outline-none placeholder-gray-500">
+      </div>
+
+      <!-- Subscription -->
+      <div class="rounded-2xl border border-gray-700 p-4">
+        <h1 class="text-white text-xl font-bold">Subscribe to Premium</h1>
+        <p class="text-white mt-2 text-sm">Subscribe to unlock new features and if eligible, receive a share of
+          revenue.</p>
+        <button class="bg-blue-400 text-white font-bold rounded-full px-4 py-2 mt-3">Subscribe</button>
+      </div>
+
+      <!-- Trends -->
+      <div class="rounded-2xl border border-gray-700 p-4 space-y-4">
+        <h1 class="text-white text-xl font-bold">What's happening</h1>
+        <div class="text-white text-sm">
+          <p class="text-gray-400">Sports Trending</p>
+          <p class="font-bold">Manchester City</p>
+          <p class="text-gray-400">12k posts</p>
+        </div>
+        <div class="text-white text-sm">
+          <p class="text-gray-400">Trending in Bangladesh</p>
+          <p class="font-bold">Harshad Chopda</p>
+          <p class="text-gray-400">12k posts</p>
+        </div>
+        <div class="text-white text-sm">
+          <p class="text-gray-400">Entertainment · Trending</p>
+          <p class="font-bold">Bollywood</p>
+          <p class="text-gray-400">12k posts</p>
+        </div>
+        <div class="text-white text-sm">
+          <p class="text-gray-400">Trending</p>
+          <p class="font-bold">#TrumpRecession</p>
+          <p class="text-gray-400">12k posts</p>
+        </div>
+        <a href="#" class="text-blue-400">Show more</a>
+      </div>
+
+      <!-- Who to follow -->
+      <div class="rounded-2xl border border-gray-700 p-4 space-y-3">
+        <h1 class="text-white text-xl font-bold">Who to follow</h1>
+        <div class="flex items-center justify-between">
+          <img src="https://pbs.twimg.com/profile_images/1572937957895507968/Z_NW0tQi_normal.jpg" class="w-12 h-12 rounded-full">
+          <div class="flex-1 mx-3">
+            <p class="text-white font-bold">Minimalist Baker</p>
+            <p class="text-gray-400 text-sm">@minimalistbaker</p>
+          </div>
+          <button class="bg-white text-black font-bold rounded-full px-3 py-1">Follow</button>
+        </div>
+        <div class="flex items-center justify-between">
+          <img src="https://pbs.twimg.com/profile_images/1669780523911110656/K9gaaM1g_normal.jpg" class="w-12 h-12 rounded-full">
+          <div class="flex-1 mx-3">
+            <p class="text-white font-bold">CNN</p>
+            <p class="text-gray-400 text-sm">@CNN</p>
+          </div>
+          <button class="bg-white text-black font-bold rounded-full px-3 py-1">Follow</button>
+        </div>
+        <div class="flex items-center justify-between">
+          <img src="https://pbs.twimg.com/profile_images/1732468757493121025/r1P4zChc_normal.jpg" class="w-12 h-12 rounded-full">
+          <div class="flex-1 mx-3">
+            <p class="text-white font-bold">ADAM</p>
+            <p class="text-gray-400 text-sm">@AdamMedia</p>
+          </div>
+          <button class="bg-white text-black font-bold rounded-full px-3 py-1">Follow</button>
+        </div>
+        <a href="#" class="text-blue-400">Show more</a>
+      </div>
+
+      <!-- Footer -->
+      <div class="flex flex-wrap text-gray-500 text-xs gap-x-2">
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Cookie Policy</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Ads info</a>
+        <a href="#">More ...</a>
+        <a href="#">© 2025 X Corp.</a>
+      </div>
+    </div>
 
   </div>
-
-
-
-
 
 </body>
 
